@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/rose1">
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/profile"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/blologin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:paddingVertical="70dp"
+        android:paddingHorizontal="40dp"
+        android:background="@drawable/ic_btn_light_rose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/perfil">
+
+        <TextView
+            android:id="@+id/txtnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Nombre"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/barnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="230dp"
+            android:textColor="@color/rose9"
+            android:background="@drawable/ic_btn_gray_rose"
+            app:layout_constraintTop_toBottomOf="@id/txtnombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Correo"
+            app:layout_constraintTop_toBottomOf="@id/barnombre"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/barcorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/rose9"
+            android:background="@drawable/ic_btn_gray_rose"
+            app:layout_constraintTop_toBottomOf="@id/txtCorreo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNumtelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Numero de telefono"
+            app:layout_constraintTop_toBottomOf="@id/barcorreo"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/barnumtelf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/rose9"
+            android:background="@drawable/ic_btn_gray_rose"
+            app:layout_constraintTop_toBottomOf="@id/txtNumtelf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtcontraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Contraseña"
+            app:layout_constraintTop_toBottomOf="@id/barnumtelf"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/barpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/rose9"
+            android:background="@drawable/ic_btn_gray_rose"
+            app:layout_constraintTop_toBottomOf="@id/txtcontraseña"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ic_btn_rose"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="Editar Perfil"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barpassword" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="115dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ic_btn_rose"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:text="Cerrar Sesion"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barpassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/rose4"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/barblog"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/document"
+            app:tint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blog"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/barblog"
+            app:layout_constraintStart_toStartOf="@id/barblog"
+            app:layout_constraintEnd_toEndOf="@id/barblog" />
+
+        <ImageView
+            android:id="@+id/barinicio"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/home"
+            app:tint="@color/black"
+            app:layout_constraintEnd_toStartOf="@id/barblog"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/barinicio"
+            app:layout_constraintStart_toStartOf="@id/barinicio"
+            app:layout_constraintEnd_toEndOf="@id/barinicio" />
+
+        <ImageView
+            android:id="@+id/barperfil"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/profile"
+            app:tint="@color/white"
+            app:layout_constraintStart_toEndOf="@id/barblog"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/barperfil"
+            app:layout_constraintStart_toStartOf="@id/barperfil"
+            app:layout_constraintEnd_toEndOf="@id/barperfil" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

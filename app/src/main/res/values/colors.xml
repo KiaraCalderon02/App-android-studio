@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="rose1">#FFBEC1</color>
+    <color name="blue_dregadent">#BEE9FF</color>
+    <color name="rose_degradent">#FF8E90</color>
+    <color name="rose2">#FFDEE0</color>
+    <color name="rose3">#FF7477</color>
+    <color name="rose4">#FF9194</color>
+    <color name="rose5">#FFBEC1</color>
+    <color name="rose6">#F2D4D6</color>
+    <color name="rose7">#CCB8B9</color>
+    <color name="rose8">#B59EA0</color>
+    <color name="rose9">#615455</color>
+</resources>

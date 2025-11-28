@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rose1">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/profile"
+        app:tint="@color/rose3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Usuario002"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/profile"
+        app:layout_constraintTop_toTopOf="@id/profile"
+        app:layout_constraintBottom_toBottomOf="@id/profile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="!Bienvenido de vuelta!"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/user"
+        app:layout_constraintStart_toEndOf="@id/profile" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="45dp"
+        android:paddingEnd="260dp"
+        android:paddingVertical="10dp"
+        android:text="Buscar"
+        android:background="@drawable/ic_btn_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/blog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="Blog"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/input"
+        app:layout_constraintTop_toBottomOf="@id/input"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver todo"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/input"
+        app:layout_constraintTop_toTopOf="@id/blog"/>
+
+    <TextView
+        android:id="@+id/blogbox"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_btn_rose"
+        app:layout_constraintTop_toBottomOf="@id/blog" />
+
+    <ImageView
+        android:id="@+id/woman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_womansmile_foreground"
+        app:layout_constraintEnd_toEndOf="@id/blogbox"
+        app:layout_constraintBottom_toBottomOf="@id/blogbox"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Desarrollar una rutina de cuidado de la piel saludable"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/blogbox"
+        app:layout_constraintBottom_toBottomOf="@id/blogbox"
+        app:layout_constraintStart_toStartOf="@id/blogbox"
+        app:layout_constraintEnd_toStartOf="@id/woman"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Para una piel radiante"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="@id/blogbox"
+        app:layout_constraintBottom_toBottomOf="@id/blogbox"
+        app:layout_constraintStart_toStartOf="@id/blogbox"
+        app:layout_constraintEnd_toStartOf="@id/woman"/>
+
+
+    <TextView
+        android:id="@+id/cuidado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="Cuidado"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/input"
+        app:layout_constraintTop_toBottomOf="@id/blogbox"/>
+
+    <ImageView
+        android:id="@+id/cuerpo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_cuerpo_foreground"
+        android:background="@drawable/ic_circle_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/cuidado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cuerpo"
+        app:layout_constraintTop_toBottomOf="@id/cuerpo"
+        app:layout_constraintStart_toStartOf="@id/cuerpo"
+        app:layout_constraintEnd_toEndOf="@id/cuerpo" />
+
+    <ImageView
+        android:id="@+id/rostro"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="30dp"
+        android:src="@mipmap/ic_rostro_foreground"
+        android:background="@drawable/ic_circle_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/cuidado"
+        app:layout_constraintEnd_toStartOf="@id/cuerpo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Rostro"
+        app:layout_constraintTop_toBottomOf="@id/rostro"
+        app:layout_constraintStart_toStartOf="@id/rostro"
+        app:layout_constraintEnd_toEndOf="@id/rostro" />
+
+    <ImageView
+        android:id="@+id/cabello"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:src="@mipmap/ic_cabello_foreground"
+        android:background="@drawable/ic_circle_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/cuidado"
+        app:layout_constraintStart_toEndOf="@id/cuerpo" />
+
+    <TextView
+        android:id="@+id/txtbloq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cabello"
+        app:layout_constraintTop_toBottomOf="@id/cabello"
+        app:layout_constraintStart_toStartOf="@id/cabello"
+        app:layout_constraintEnd_toEndOf="@id/cabello" />
+
+    <ImageView
+        android:id="@+id/pestañas"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_pestanas_foreground"
+        android:background="@drawable/ic_circle_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/txtbloq1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pestañas"
+        app:layout_constraintTop_toBottomOf="@id/pestañas"
+        app:layout_constraintStart_toStartOf="@id/pestañas"
+        app:layout_constraintEnd_toEndOf="@id/pestañas" />
+
+    <ImageView
+        android:id="@+id/labios"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_labios_foreground"
+        android:background="@drawable/ic_circle_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/txtbloq1"
+        app:layout_constraintEnd_toStartOf="@id/cuerpo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Labios"
+        app:layout_constraintTop_toBottomOf="@id/labios"
+        app:layout_constraintStart_toStartOf="@id/labios"
+        app:layout_constraintEnd_toEndOf="@id/labios" />
+
+    <ImageView
+        android:id="@+id/pies"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_pies_foreground"
+        android:background="@drawable/ic_circle_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/txtbloq1"
+        app:layout_constraintStart_toEndOf="@id/cuerpo" />
+
+    <TextView
+        android:id="@+id/txtbloq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pies"
+        app:layout_constraintTop_toBottomOf="@id/pies"
+        app:layout_constraintStart_toStartOf="@id/pies"
+        app:layout_constraintEnd_toEndOf="@id/pies" />
+
+    <ImageView
+        android:id="@+id/manos"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_manos_foreground"
+        android:background="@drawable/ic_circle_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/txtbloq2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Manos"
+        app:layout_constraintTop_toBottomOf="@id/manos"
+        app:layout_constraintStart_toStartOf="@id/manos"
+        app:layout_constraintEnd_toEndOf="@id/manos" />
+
+    <ImageView
+        android:id="@+id/dientes"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_dientes_foreground"
+        android:background="@drawable/ic_circle_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/txtbloq2"
+        app:layout_constraintEnd_toStartOf="@id/cuerpo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Dientes"
+        app:layout_constraintTop_toBottomOf="@id/dientes"
+        app:layout_constraintStart_toStartOf="@id/dientes"
+        app:layout_constraintEnd_toEndOf="@id/dientes" />
+
+    <ImageView
+        android:id="@+id/feminidad"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_feminidad_foreground"
+        android:background="@drawable/ic_circle_light_rose"
+        app:layout_constraintTop_toBottomOf="@id/txtbloq2"
+        app:layout_constraintStart_toEndOf="@id/cuerpo" />
+
+    <TextView
+        android:id="@+id/txtbloq3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Feminidad"
+        app:layout_constraintTop_toBottomOf="@id/feminidad"
+        app:layout_constraintStart_toStartOf="@id/feminidad"
+        app:layout_constraintEnd_toEndOf="@id/feminidad" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/rose4"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/barblog"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/document"
+            app:tint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blog"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/barblog"
+            app:layout_constraintStart_toStartOf="@id/barblog"
+            app:layout_constraintEnd_toEndOf="@id/barblog" />
+
+        <ImageView
+            android:id="@+id/barinicio"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/home"
+            app:tint="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/barblog"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/barinicio"
+            app:layout_constraintStart_toStartOf="@id/barinicio"
+            app:layout_constraintEnd_toEndOf="@id/barinicio" />
+
+        <ImageView
+            android:id="@+id/barperfil"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/profile"
+            app:tint="@color/black"
+            app:layout_constraintStart_toEndOf="@id/barblog"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/barperfil"
+            app:layout_constraintStart_toStartOf="@id/barperfil"
+            app:layout_constraintEnd_toEndOf="@id/barperfil" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
